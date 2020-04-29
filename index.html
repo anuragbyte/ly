@@ -3,49 +3,210 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="google-signin-client_id" content="714219498694-90oa6fcmmbtgs19b0f1bmrs2us3cr5m9.apps.googleusercontent.com">
+
   <title>LearnYuva | Igniting Young Minds</title>
+  <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/favicon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand h1" href="#">
+      <div class="logo">
+        <img src="Assets/Images/logoWhite.png" height="60px" width="47px">
+        <img src="Assets/Images/textWhite.png" height="40px" width="116px" class="my-auto">
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#newsMenu" aria-controls="newsMenu" aria-expanded="false" aria-lable="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="newsMenu">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link nav-pills active" href="#">Home</a>
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Browse Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <h6 class="dropdown-header text-muted text-uppercase">Languages</h6>
+            <a class="dropdown-item" href="#">French</a>
+            <a class="dropdown-item" href="#">German</a>
+            <a class="dropdown-item" href="#">Spanish</a>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header text-muted text-uppercase">Development</h6>
+            <a class="dropdown-item" href="/courses/web.html">Web-Dev</a>
+            <a class="dropdown-item" href="#">App-Dev</a>
+            <a class="dropdown-item" href="#">Game-Dev</a>  
+            <a class="dropdown-item" href="#">iOS-Dev</a>         
+            <div class="dropdown-divider"></div>   
+            <h6 class="dropdown-header text-muted text-uppercase">Internet of Robotic Things</h6>
+            <a class="dropdown-item" href="#">Internet of Things</a>
+            <a class="dropdown-item" href="#">Robotics</a>
+            <a class="dropdown-item" href="#">Drone Making</a>        
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header text-muted text-uppercase">Marketing</h6>
+            <a class="dropdown-item" href="#">Digital Marketing</a>
+          </div>
+        </div>
 
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Join Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#" id="login">Login</a>
+          <a class="dropdown-item" href="#" id="signup">Sign Up</a>
+          </div>
+        </div>
+        <a class="nav-item nav-link nav-pills" href="#">About</a>
+      </div>
+    </div>
+  </nav>
 
-  <div class="top-container">
-    <img src="" alt="">
-    <h1>LearnYuva</h1>
-    <h2>Igniting Young Minds</h2>
-    <h4>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</h4>
+  <!--Modals-->
+    <!--Login Modal-->
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md modal-dialog-centered" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="logo">
+              <img src="Assets/Images/logoImg.png" height="60px" width="47px">
+              <img src="Assets/Images/logoText.png" height="40px" width="116px" class="my-auto">
+            </div>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class=" ">
+                <form id="loginDetails">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="username" placeholder="Enter your Username">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder = "Enter your password">
+                  </div>
+                  <div class="form-group">
+                    <a href=""><button class="btn btn-outline-dark">Login</button></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Login Modal-->
+
+    <!--SignUp Modal-->
+      <div class="modal fade" role="dialogue" id="signupModal">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="content">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="logo">
+                <img src="Assets/Images/logoImg.png" height="60px" width="47px">
+                <img src="Assets/Images/logoText.png" height="40px" width="116px" class="my-auto">
+              </div>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--End of Signup Modal-->
+
+  <!--Modals End-->
+  
+  <!--Jumbotron-->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 offset-sm-1 col-12">
+          <h2>LearnYuva</h2>
+          <h5>Igniting Young Minds</h5>
+        </div>
+        <div class="col-sm-7 col-12">
+          <p>
+            Been looking for quality content that can make you smart enough to confidently present yourself before the contemporary world? You are at the right destination. Keep your eyes peeled and make the most out of this opportunity that has knocked your door!
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+  <!--Jumbotron End-->
 
 
-  <div class="middle-container">
-    <div class="courses">
-      <h1>Our Courses</h1>
-      <div class="courses-row">
-        <img class="languages-img" src="https://image.flaticon.com/icons/svg/2302/2302903.svg" alt="languages-img">
-        <h3>Languages</h3>
-        <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+  <div class="container">
+    <div class="heading">
+      <h1 class="text-center">Our Courses</h1>
+      <hr class="my-4">
+    </div>
+
+    <div class="middle-container">
+      <div class="row justify-content-center">
+        <div class="col-sm-4 col-12 order-sm-first my-auto ">
+          <img class="course-icon" src="https://image.flaticon.com/icons/svg/2302/2302903.svg" alt="languages-img">
+        </div>
+        <div class="col-sm-8 col-12 order-sm-first my-auto">
+          <h3>Languages</h3>
+            <p class="text-left">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse modi molestiae recusandae, nam dolores nisi sequi beatae. Eligendi provident officia nulla quo voluptate eveniet incidunt in quaerat ipsa non.
+            </p>
+        </div>
       </div>
-      <div class="courses-row">
-        <img class="development-img" src="https://image.flaticon.com/icons/svg/1803/1803675.svg" alt="development-img">
-        <h3>Development</h3>
-        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+      <hr class="divider my-4">
+      <div class="row">
+        <div class="col-sm-4 col-12 order-sm-last my-auto">
+          <img class="course-icon" src="https://image.flaticon.com/icons/svg/1803/1803675.svg" alt="development-img">
+        </div>
+        <div class="col-sm-8 col-12 order-sm-first my-auto course-text">
+          <h3>Internet of Robotic Things</h3>
+          <p class="text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse modi molestiae recusandae, nam dolores nisi sequi beatae. Eligendi provident officia nulla quo voluptate eveniet incidunt in quaerat ipsa non.
+          </p>
+        </div>
       </div>
-      <div class="courses-row">
-        <img class="electronics-img" src="https://image.flaticon.com/icons/svg/428/428313.svg" alt="electronics-img">
-        <h3>Electronics</h3>
-        <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+      <hr class="divider my-4">
+      <div class="row">
+        <div class="col-sm-4 col-12 order-sm-first my-auto">
+          <img class="course-icon" src="https://image.flaticon.com/icons/svg/428/428313.svg" alt="electronics-img">
+        </div>
+        <div class="col-sm-8 col-12 order-sm-first my-auto">
+          <h3>Internet of Robotic Things</h3>
+          <p class="text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse modi molestiae recusandae, nam dolores nisi sequi beatae. Eligendi provident officia nulla quo voluptate eveniet incidunt in quaerat ipsa non.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 
-
   <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <h5>© 2020 LearnYuva All rights reserved.</h5>
+    <div class="social text-center">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+    </div>
+    <h5 class="text-center">© 2020 LearnYuva All rights reserved.</h5>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script>
+    gapi.load("auth2", function(){
+    gapi.auth.init();
+  });
+  </script>
 </body>
 
 </html>
