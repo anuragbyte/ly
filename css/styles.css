@@ -37,17 +37,16 @@ p{
 }
 
 .middle-container{
-background-color: #f9F7F7
+background-color: #f9F7F7;
 color: #07689F;
-margin: 100px 0;
+margin: 100px 5px;
+padding: 5px;
 }
 
 .bottom-container{
   background-color: #DBE2EF;
   color: #fff;
   padding: 50px 0;
-}
-.row{
 }
 .course-icon{
   width: 100%;
