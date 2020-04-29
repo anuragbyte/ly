@@ -69,7 +69,96 @@
       </div>
     </div>
   </nav>
-  
+  <!--Modals-->
+    <!--Login Modal-->
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-md modal-dialog-centered" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="logo">
+              <img src="../Assets/Images/logoImg.png" height="60px" width="47px">
+              <img src="../Assets/Images/logoText.png" height="40px" width="116px" class="my-auto">
+            </div>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class=" ">
+                <form id="loginDetails">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="username" placeholder="Enter your Username">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder = "Enter your password">
+                  </div>
+                  <div class="form-group">
+                    <a href=""><button class="btn btn-outline-dark">Login</button></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Login Modal-->
+
+    <!--SignUp Modal-->
+      <div class="modal fade" role="dialogue" id="signupModal">
+        <div class="modal-dialog modal-md modal-dialog-centered" role="content">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="logo">
+                <img src="../Assets/Images/logoImg.png" height="60px" width="47px">
+                <img src="../Assets/Images/logoText.png" height="40px" width="116px" class="my-auto">
+              </div>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-12 text-center my-auto d-none d-sm-block">Name</label>
+                  <div class="col-sm-9 col-12 text-center">
+                    <input type="text" id="name" class="form-control" placeholder="Enter you Name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-12 text-center my-auto d-none d-sm-block">Email</label>
+                  <div class="col-sm-9 col-12 text-center">
+                    <input type="email" id="email" class="form-control" placeholder="Enter your Email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-12 text-center my-auto d-none d-sm-block">Mobile No. </label>
+                  <div class="col-sm-9 col-12 text-center">
+                    <input type="tel" id="mobile" class="form-control" placeholder="Enter your Mobile Number">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-12 text-center d-none d-sm-block">Password</label>
+                  <div class="col-sm-9 col-12 text-center">
+                    <input type="password" id="password" class="form-control" placeholder="Enter Your Password">
+                    <small class="form-text text-muted float-left" >Your password must be 8-20 characters long.</small>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-12">
+                    <div class="btn btn-primary btn-block">
+                      Submit & SignUp
+                    </div>
+                  </div>
+                  <!--div class="col-sm-6 ">
+                    <div class="g-signin2 btn-block" data-onsuccess="onSignIn" style="width: 280px; overflow: hidden;"></div>
+                  </div-->
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Signup Modal-->
+
+  <!--Modals End-->
   <div class="container">
     <div class="jumbotron">
         <div class="course-intro">
@@ -103,8 +192,10 @@
 
   <div class="bottom-container">
     <div class="social text-center">
-      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://www.facebook.com/learnyuva/"><i class=" fa-fw fab fa-facebook fa-lg"></i></a>
+      <a class="footer-link" href="https://www.linkedin.com/"><i class="fa-fw fab fa-linkedin-in fa-lg"></i></a>
+      <a class="footer-link" href="https://www.instagram.com/learnyuva/"><i class="fa-fw fab fa-instagram fa-lg"></i></a>
+      
     </div>
     <h5 class="text-center">© 2020 LearnYuva All rights reserved.</h5>
   </div>
@@ -112,8 +203,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-  <script src="https://apis.google.com/js/api.js"></script>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="../js/scripts.js"></script>
+  <script src="https://kit.fontawesome.com/b3a074ef19.js" crossorigin="anonymous"></script>
   </body>
 </html>
