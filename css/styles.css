@@ -63,6 +63,9 @@ padding: 5px;
   .course-text{
     text-align: center !important;
     }
+    .social{
+      text-align: center !important;
+    }
 }
 .divider{
   border-style: none;
@@ -74,4 +77,8 @@ padding: 5px;
 }
 .dropdown-submenu{
   position: relative;
+}
+.social{
+  text-align: left;
+  margin-bottom: 20px;
 }
