@@ -5,14 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <!--meta name="google-signin-client_id" content="714219498694-6lb9kmv2dc3npbl65hsnp4ssbuq1k3up.apps.googleusercontent.com"-->
-  
+  <meta name="google-signin-client_id" content="714219498694-90oa6fcmmbtgs19b0f1bmrs2us3cr5m9.apps.googleusercontent.com">
+
   <title>LearnYuva | Igniting Young Minds</title>
-  <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/logoWhite.png">
+ <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/logoWhite.png">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/dropdown.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/transition.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
@@ -21,8 +22,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand h1" href="#">
       <div class="logo">
-        <img src="Assets/Images/logoWhite.png" height="60px" width="47px">
-        <img src="Assets/Images/textWhite.png" height="40px" width="116px" class="my-auto">
+        <img src="../Assets/Images/logoWhite.png" height="60px" width="47px">
+        <img src="../Assets/Images/textWhite.png" height="40px" width="116px" class="my-auto">
       </div>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#newsMenu" aria-controls="newsMenu" aria-expanded="false" aria-lable="Toggle navigation">
@@ -30,56 +31,55 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="newsMenu">
       <div class="navbar-nav">
-        <a class="nav-item nav-link nav-pills active" href="#">Home</a>
-
+        <a class="nav-item nav-link nav-pills" href="../index.html">Home</a>
         <div class="ui dropdown">
           <a class="nav-item nav-link nav-pills dropdown-toggle" href="#">Browse our courses</a>
           <div class="menu">
             <div class="item">
               Foreign Languages
               <div class="menu">
-                <div class="item"><a class="courses" href="/courses/french.html">French</a></div>
-                <div class="item"><a class="courses" href="/courses/spanish.html">Spanish</a></div>
-                <div class="item"><a class="courses" href="/courses/german.html">German</a></div>
+                <div class="item"><a class="courses" href="french.html">French</a></div>
+                <div class="item"><a class="courses" href="spanish.html">Spanish</a></div>
+                <div class="item"><a class="courses" href="german.html">German</a></div>
               </div>
             </div>
            
             <div class="item">
               Development
               <div class="menu">
-                <div class="item"><a class="courses" href="/courses/web.html">Web Development</a></div>
-                <div class="item"><a class="courses" href="/courses/app.html">App Development</a></div>
-                <div class="item"><a class="courses" href="/courses/ios.html">iOS Development</a></div>
-                <div class="item"><a class="courses" href="/courses/game.html">Game Development</a></div>
+                <div class="item"><a class="courses" href="web.html">Web Development</a></div>
+                <div class="item"><a class="courses" href="app.html">App Development</a></div>
+                <div class="item"><a class="courses" href="ios.html">iOS Development</a></div>
+                <div class="item"><a class="courses" href="game.html">Game Development</a></div>
               </div>
             </div>
             <div class="item">
               Internet of Robotic Things
               <div class="menu">
-                <div class="item"><a class="courses" href="/courses/iot.html">Internet of Things [IoT]</a></div>
-                <div class="item"><a class="courses" href="/courses/robotics.html">Robotics</a></div>
-                <div class="item"><a class="courses" href="/courses/drone.html">Drone Making</a></div>
+                <div class="item"><a class="courses" href="iot.html">Internet of Things [IoT]</a></div>
+                <div class="item"><a class="courses" href="robotics.html">Robotics</a></div>
+                <div class="item"><a class="courses" href="drone.html">Drone Making</a></div>
               </div>
             </div>
             <div class="item">
               Marketing
               <div class="menu">
-                <div class="item"><a class="courses" href="/courses/dm.html">Digital Marketing</a></div>
+                <div class="item"><a class="courses" href="dm.html">Digital Marketing</a></div>
               </div>
             </div>
             <div class="item">
               Coding
               <div class="menu">
-                <div class="item"><a class="courses" href="/courses/c++.html">C++</a></div>
-                <div class="item"><a class="courses" href="/courses/java.html">Java</a></div>
-                <div class="item"><a class="courses" href="/courses/python.html">Python</a></div>
+                <div class="item"><a class="courses" href="#">C++</a></div>
+                <div class="item"><a class="courses" href="java.html">Java</a></div>
+                <div class="item"><a class="courses" href="python.html">Python</a></div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="dropdown">
-          <a class="nav-link nav-item dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Join Us
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -87,11 +87,11 @@
           <a class="dropdown-item" href="#" id="signup">Sign Up</a>
           </div>
         </div>
+        <a class="nav-item nav-link nav-pills" href="#">Contact</a>
         <a class="nav-item nav-link nav-pills" href="#">About</a>
       </div>
     </div>
   </nav>
-
   <!--Modals-->
     <!--Login Modal-->
     <div id="loginModal" class="modal fade" role="dialog">
@@ -99,8 +99,8 @@
         <div class="modal-content">
           <div class="modal-header">
             <div class="logo">
-              <img src="Assets/Images/logoImg.png" height="60px" width="47px">
-              <img src="Assets/Images/logoText.png" height="40px" width="116px" class="my-auto">
+              <img src="../Assets/Images/logoImg.png" height="60px" width="47px">
+              <img src="../Assets/Images/logoText.png" height="40px" width="116px" class="my-auto">
             </div>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
@@ -132,8 +132,8 @@
           <div class="modal-content">
             <div class="modal-header">
               <div class="logo">
-                <img src="Assets/Images/logoImg.png" height="60px" width="47px">
-                <img src="Assets/Images/logoText.png" height="40px" width="116px" class="my-auto">
+                <img src="../Assets/Images/logoImg.png" height="60px" width="47px">
+                <img src="../Assets/Images/logoText.png" height="40px" width="116px" class="my-auto">
               </div>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
@@ -142,25 +142,25 @@
                 <div class="form-group row">
                   <label class="col-sm-3 col-12 text-center my-auto d-none d-sm-block">Name</label>
                   <div class="col-sm-9 col-12 text-center">
-                    <input type="text" id="name" class="form-control" placeholder="Enter you Name" pattern="[a-zA-Z]+" required>
+                    <input type="text" id="name" class="form-control" placeholder="Enter you Name">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label class="col-sm-3 col-12 text-center my-auto d-none d-sm-block">Email</label>
                   <div class="col-sm-9 col-12 text-center">
-                    <input type="email" id="email" class="form-control" placeholder="Enter your Email" pattern=".+@.+[a-zA-z]+" required>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your Email">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label class="col-sm-3 col-12 text-center my-auto d-none d-sm-block">Mobile No. </label>
                   <div class="col-sm-9 col-12 text-center">
-                    <input type="tel" id="mobile" class="form-control" placeholder="Enter your Mobile Number" pattern="[6-9]{1}[0-9]{9}" required>
+                    <input type="tel" id="mobile" class="form-control" placeholder="Enter your Mobile Number">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label class="col-sm-3 col-12 text-center d-none d-sm-block">Password</label>
                   <div class="col-sm-9 col-12 text-center">
-                    <input type="password" id="password" class="form-control" placeholder="Enter Your Password" required minlength="8" maxlength="20" >
+                    <input type="password" id="password" class="form-control" placeholder="Enter Your Password">
                     <small class="form-text text-muted float-left" >Your password must be 8-20 characters long.</small>
                   </div>
                 </div>
@@ -182,94 +182,36 @@
     <!--End of Signup Modal-->
 
   <!--Modals End-->
-  
-  <!--Jumbotron-->
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 offset-sm-1 col-12">
-          <h2>LearnYuva</h2>
-          <h5>Igniting Young Minds</h5>
-        </div>
-        <div class="col-sm-7 col-12">
-          <p>
-            Been looking for quality content that can make you smart enough to confidently present yourself before the contemporary world? You are at the right destination. Keep your eyes peeled and make the most out of this opportunity that has knocked your door!
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Jumbotron End-->
-
-
   <div class="container">
-    <div class="heading">
-      <h1 class="text-center">Our Courses</h1>
-      <hr class="my-4">
+    <div class="jumbotron">
+        <div class="course-intro">
+            <div class="row">
+                <div class="col-sm-6 col-12 my-auto">
+                    <h2>Let's start coding in C++</h2>
+                    <h6><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente id, debitis odio rem repellendus eum ipsa quis reprehenderit libero saepe quaerat doloremque suscipit laudantium similique minima quasi praesentium possimus temporibus?</p></h6>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <img class="course-icon" src="../Assets/Images/c++Logo.png">
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="middle-container">
-      <div class="row justify-content-center">
-        <div class="col-sm-4 col-12 order-sm-first my-auto ">
-          <img class="course-icon" src="Assets/Images/langIcon.svg" alt="languages-img">
+    <hr class="my-4 divider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 d-none d-md-block course-stats">
+                <h5>Course Progress Visuals Here</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam temporibus iste voluptatem quia voluptates? Ipsum culpa sit soluta neque sint facilis aperiam voluptates, ex quam voluptatum, quo mollitia error non.</p>
+            </div>
+            <div class="col-md-9 col-12 course-content">
+                <h5>Course Content Here</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam corrupti, nesciunt voluptate ullam voluptatem repellat quod vitae saepe? Sunt ut facere optio nesciunt suscipit expedita labore! Eum autem natus exercitationem.</p>
+            </div>
         </div>
-        <div class="col-sm-8 col-12 order-sm-first my-auto">
-          <h3>Languages</h3>
-            <p class="text-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse modi molestiae recusandae, nam dolores nisi sequi beatae. Eligendi provident officia nulla quo voluptate eveniet incidunt in quaerat ipsa non.
-            </p>
-        </div>
-      </div>
-      <hr class="divider">
-      <div class="row">
-        <div class="col-sm-4 col-12 order-sm-last my-auto">
-          <img class="course-icon" src="Assets/Images/devIcon.svg" alt="development-img">
-        </div>
-        <div class="col-sm-8 col-12 order-sm-first my-auto course-text">
-          <h3>Development</h3>
-          <p class="text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse modi molestiae recusandae, nam dolores nisi sequi beatae. Eligendi provident officia nulla quo voluptate eveniet incidunt in quaerat ipsa non.
-          </p>
-        </div>
-      </div>
-      <hr class="divider">
-      <div class="row">
-        <div class="col-sm-4 col-12 order-sm-first my-auto">
-          <img class="course-icon" src="Assets/Images/iotIcon.svg" alt="electronics-img">
-        </div>
-        <div class="col-sm-8 col-12 order-sm-first my-auto">
-          <h3>Internet of Robotic Things</h3>
-          <p class="text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse modi molestiae recusandae, nam dolores nisi sequi beatae. Eligendi provident officia nulla quo voluptate eveniet incidunt in quaerat ipsa non.
-          </p>
-        </div>
-      </div>
-      <hr class="divider">
-      <div class="row">
-        <div class="col-sm-4 col-12 order-sm-last my-auto">
-          <img class="course-icon" src="Assets/Images/marketingIcon.png" alt="development-img">
-        </div>
-        <div class="col-sm-8 col-12 order-sm-first my-auto course-text">
-          <h3>Marketing</h3>
-          <p class="text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse modi molestiae recusandae, nam dolores nisi sequi beatae. Eligendi provident officia nulla quo voluptate eveniet incidunt in quaerat ipsa non.
-          </p>
-        </div>
-      </div>
-      <hr class="divider">
-      <div class="row">
-        <div class="col-sm-4 col-12 order-sm-first my-auto">
-          <img class="course-icon" src="Assets/Images/codingIcon.png" alt="electronics-img">
-        </div>
-        <div class="col-sm-8 col-12 order-sm-first my-auto">
-          <h3>Coding</h3>
-          <p class="text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse modi molestiae recusandae, nam dolores nisi sequi beatae. Eligendi provident officia nulla quo voluptate eveniet incidunt in quaerat ipsa non.
-          </p>
-        </div>
-      </div>
     </div>
   </div>
+  
 
   <div class="bottom-container">
     <div class="container">
@@ -312,7 +254,7 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
@@ -320,14 +262,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/dropdown.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/transition.min.js"></script>
   <script>$('.ui.dropdown').dropdown();</script>
-  <!-- /*script src="https://apis.google.com/js/api.js"></script>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  
-  <script>
-    gapi.load("auth2", function(){
-    gapi.auth.init();
-  });
-  </script-->
-</body>
-
+  </body>
 </html>

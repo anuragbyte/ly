@@ -8,9 +8,12 @@
   <meta name="google-signin-client_id" content="714219498694-90oa6fcmmbtgs19b0f1bmrs2us3cr5m9.apps.googleusercontent.com">
 
   <title>LearnYuva | Igniting Young Minds</title>
-  <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/favicon.ico" />
+ <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/logoWhite.png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/dropdown.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/transition.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/courses-style.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
@@ -29,29 +32,49 @@
     <div class="collapse navbar-collapse justify-content-end" id="newsMenu">
       <div class="navbar-nav">
         <a class="nav-item nav-link nav-pills" href="../index.html">Home</a>
-        <div class="dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Browse Courses
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <h6 class="dropdown-header text-muted text-uppercase">Languages</h6>
-            <a class="dropdown-item" href="french.html">French</a>
-            <a class="dropdown-item" href="german.html">German</a>
-            <a class="dropdown-item" href="spanish.html">Spanish</a>
-            <div class="dropdown-divider"></div>
-            <h6 class="dropdown-header text-muted text-uppercase">Development</h6>
-            <a class="dropdown-item" href="web.html">Web-Dev</a>
-            <a class="dropdown-item" href="#">App-Dev</a>
-            <a class="dropdown-item" href="game.html">Game-Dev</a>  
-            <a class="dropdown-item" href="ios.html">iOS-Dev</a>         
-            <div class="dropdown-divider"></div>   
-            <h6 class="dropdown-header text-muted text-uppercase">Internet of Robotic Things</h6>
-            <a class="dropdown-item" href="iot.html">Internet of Things</a>
-            <a class="dropdown-item" href="robotics.html">Robotics</a>
-            <a class="dropdown-item" href="drone.html">Drone Making</a>        
-            <div class="dropdown-divider"></div>
-            <h6 class="dropdown-header text-muted text-uppercase">Marketing</h6>
-            <a class="dropdown-item" href="dm.html">Digital Marketing</a>
+        <div class="ui dropdown">
+          <a class="nav-item nav-link nav-pills dropdown-toggle" href="#">Browse our courses</a>
+          <div class="menu">
+            <div class="item">
+              Foreign Languages
+              <div class="menu">
+                <div class="item"><a class="courses" href="french.html">French</a></div>
+                <div class="item"><a class="courses" href="spanish.html">Spanish</a></div>
+                <div class="item"><a class="courses" href="german.html">German</a></div>
+              </div>
+            </div>
+           
+            <div class="item">
+              Development
+              <div class="menu">
+                <div class="item"><a class="courses" href="web.html">Web Development</a></div>
+                <div class="item"><a class="courses" href="#">App Development</a></div>
+                <div class="item"><a class="courses" href="ios.html">iOS Development</a></div>
+                <div class="item"><a class="courses" href="game.html">Game Development</a></div>
+              </div>
+            </div>
+            <div class="item">
+              Internet of Robotic Things
+              <div class="menu">
+                <div class="item"><a class="courses" href="iot.html">Internet of Things [IoT]</a></div>
+                <div class="item"><a class="courses" href="robotics.html">Robotics</a></div>
+                <div class="item"><a class="courses" href="drone.html">Drone Making</a></div>
+              </div>
+            </div>
+            <div class="item">
+              Marketing
+              <div class="menu">
+                <div class="item"><a class="courses" href="dm.html">Digital Marketing</a></div>
+              </div>
+            </div>
+            <div class="item">
+              Coding
+              <div class="menu">
+                <div class="item"><a class="courses" href="c++.html">C++</a></div>
+                <div class="item"><a class="courses" href="java.html">Java</a></div>
+                <div class="item"><a class="courses" href="python.html">Python</a></div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -192,19 +215,53 @@
   
 
   <div class="bottom-container">
-    <div class="social text-center">
-      <a class="footer-link" href="https://www.facebook.com/learnyuva/"><i class=" fa-fw fab fa-facebook fa-lg"></i></a>
-      <a class="footer-link" href="https://www.linkedin.com/"><i class="fa-fw fab fa-linkedin-in fa-lg"></i></a>
-      <a class="footer-link" href="https://www.instagram.com/learnyuva/"><i class="fa-fw fab fa-instagram fa-lg"></i></a>
-      
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <h5>Links</h5>
+        </div>
+        <div class="col-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <a class="btn btn-social-icon" href="mailto:arnab@gmail.com?subject=This%20is%20the%20subject&cc=someone_else@example.com&body=This%20is%20the%20body">
+                  <i class="fa fa-envelope-o"></i></a> contact.learnyuva@gmail.com
+              </p>
+            </li>
+            <li>
+              <p>
+                <a class="btn btn-social-icon" href="#">
+                  <i class="fas fa-mobile-alt"></i>
+                </a> +91-6969696969
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <h5>Our Social Links</h5>
+          <div class="social text-left">
+            <a class="footer-link" href="https://www.facebook.com/learnyuva/"><i class=" fa-fw fab fa-facebook fa-lg"></i></a>
+            <a class="footer-link" href="https://www.linkedin.com/"><i class="fa-fw fab fa-linkedin-in fa-lg"></i></a>
+            <a class="footer-link" href="https://www.instagram.com/learnyuva/"><i class="fa-fw fab fa-instagram fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h5 class="text-center">© 2020 LearnYuva All rights reserved.</h5>
+        </div>
+      </div>
     </div>
-    <h5 class="text-center">© 2020 LearnYuva All rights reserved.</h5>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="../js/scripts.js"></script>
+  <script src="js/scripts.js"></script>
   <script src="https://kit.fontawesome.com/b3a074ef19.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/dropdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/transition.min.js"></script>
+  <script>$('.ui.dropdown').dropdown();</script>
   </body>
 </html>
