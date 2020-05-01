@@ -111,10 +111,10 @@
             <div class=" ">
               <form id="loginDetails">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="username" placeholder="Enter your Username">
+                  <input type="email" class="form-control" id="userMail" placeholder="Enter your Username">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                  <input type="password" class="form-control" id="userPassword" placeholder="Enter your password">
                 </div>
                 <div class="form-group">
                   <a href=""><button class="btn btn-outline-dark">Login</button></a>
@@ -214,34 +214,39 @@
     <div class="row">
       <div class="column">
         <div class="card">
-          <img src="Assets/Images/elearning.png" alt="live sessions" style="width:100%">
+          <img src="Assets/Images/elearning.png" class="course-icon mx-auto" alt="live sessions">
           <br>
           <p>10 hrs+ of live interactive & doubt solving sessions.</p>
         </div>
       </div>
-  <div class="column">
-    <div class="card">
-      <img src="Assets/Images/desktop-computer.png" alt="pro. mentor" style="width:100%">
-      <br>
-      <p>Get mentored by top professionals.</p>
+      <hr class="divider d-block d-sm-none">
+      <div class="column">
+        <div class="card">
+          <img src="Assets/Images/desktop-computer.png" class="course-icon mx-auto" alt="pro. mentor">
+          <br>
+          <p>Get mentored by top professionals.</p>
+        </div>
+      </div>
+      <hr class="divider d-block d-sm-none">
+      <div class="column">
+        <div class="card justify-content-center">
+          <img src="Assets/Images/graduate.png" alt="full development" class="course-icon mx-auto" >
+          <br>
+          <p>Courses tailored for your all-round development.</p>
+        </div>
+      </div>
+      <hr class="divider d-block d-sm-none">
+      <div class="column">
+        <div class="card">
+          <img src="Assets/Images/video-tutorials.png" alt="suitable guidance" class="course-icon mx-auto">
+          <br>
+          <p>Personalized guidance suited to your needs.</p>
+        </div>
+      </div>
+      <hr class="divider d-block d-sm-none">
     </div>
+    <hr class="divider d-none d-lg-block">
   </div>
-  <div class="column">
-    <div class="card">
-      <img src="Assets/Images/graduate.png" alt="full development" style="width:100%">
-      <br>
-      <p>Courses tailored for your all-round development.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="card"><img src="Assets/Images/video-tutorials.png" alt="suitable guidance" style="width:100%">
-      <br>
-    <p>Personalized guidance suited to your needs.</p>
-  </div>
-  </div>
-</div>
-<br>
-<br>
 
   <div class="container">
     <div class="heading">
@@ -262,15 +267,6 @@
         </div>
       </div>
 
-      <!-- USP -->
-      <div class="row justify-content-center">
-        <div class="col-sm-3 col-12">
-          <div class="card">
-
-          </div>
-        </div>
-      </div>
-      <!-- USP End-->
       <hr class="divider">
       <div class="row">
         <div class="col-sm-4 col-12 order-sm-last my-auto">
@@ -321,19 +317,27 @@
       </div>
     </div>
   </div>
-
-
+  
   <div class="bottom-container">
-    <div class="social text-center">
-      <a class="footer-link" href="https://www.facebook.com/"><i class="fa-fw fab fa-facebook fa-lg"></i></a>
-      <a class="footer-link" href="https://www.instagram.com/"><i class="fa-fw fab fa-instagram fa-lg"></i></a>
-      <a class="footer-link" href="https://www.linkedin.com/"><i class="fa-fw fab fa-linkedin-in fa-lg"></i></a>
-      <a class="footer-link" href="mailto:contact.learnyuva@gmail.com"><i class="fa-fw fas fa-envelope fa-lg"></i></a>
-      <a class="footer-link" href=""><i class="fa-fw fas fa-comment-alt fa-lg"></i></a>
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-12 my-auto">
+          <div class="social text-center">
+            <a class="footer-link" href="https://www.facebook.com/learnyuva"><i class="fa-fw fab fa-facebook fa-lg"></i></a>
+            <a class="footer-link" href="https://www.instagram.com/learnyuva"><i class="fa-fw fab fa-instagram fa-lg"></i></a>
+            <a class="footer-link" href="https://www.linkedin.com/"><i class="fa-fw fab fa-linkedin-in fa-lg"></i></a>
+            <a class="footer-link" href="mailto:contact.learnyuva@gmail.com"><i class="fa-fw fas fa-envelope fa-lg"></i></a>
+            <a class="footer-link" href=""><i class="fa-fw fas fa-comment-alt fa-lg"></i></a>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="my-auto">
+            <h6 class="text-center">© 2020 LearnYuva All rights reserved.</h6>
+            <h6 class="text-center"> Made with &#x2764;</h6>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <h5 class="text-center">© 2020 LearnYuva All rights reserved.</h5>
-    <h6 class="text-center"> Made with &#x2764;</h6>
   </div>
 
 
@@ -347,14 +351,5 @@
   <script>
     $('.ui.dropdown').dropdown();
   </script>
-  <!-- /*script src="https://apis.google.com/js/api.js"></script>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-
-  <script>
-    gapi.load("auth2", function(){
-    gapi.auth.init();
-  });
-  </script-->
 </body>
-
 </html>
