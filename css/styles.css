@@ -59,7 +59,7 @@ body {
   .column {
     width: 100%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
 
@@ -71,10 +71,11 @@ body {
 .jumbotron{
   color: #07689F;
   background-color: #fff !important;
+  height: 7% !important;
 }
 .heading{
   color: #07689F;
-  margin: 30px;
+  margin: 0px;
 }
  .navbar{
     background-color: #3F72AF;
@@ -91,7 +92,7 @@ body {
 .middle-container{
 background-color: #f9F7F7;
 color: #07689F;
-margin: 100px 5px;
+margin-bottom: 2px;
 padding: 5px;
 }
 
