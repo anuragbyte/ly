@@ -62,8 +62,22 @@ body {
     margin-bottom: 0px;
   }
 }
-
-
+/*
+.team{
+  display: flex;
+  justify-content: center;
+}*/
+.team .row{
+  margin-top: 5% !important;
+}
+.list-unstyled li{
+  padding: 0% !important;
+  margin: 0% !important;
+}
+.team .row .list-unstyled li p{
+  font-size: 15px;
+  padding: 0% !important;
+}
 .courses{
   text-decoration: none !important;
   color: #33313B !important;
@@ -72,6 +86,10 @@ body {
   color: #07689F;
   background-color: #fff !important;
   height: 7% !important;
+  background-color: #33313B !important;
+}
+.jumbotron h1{
+  margin-top: 0% !important;
 }
 .heading{
   color: #07689F;
@@ -114,6 +132,7 @@ padding: 5px;
   }
   .row{
     text-align: center;
+    margin-top: 2% !important;
   }
   .course-text{
     text-align: center !important;
