@@ -102,6 +102,7 @@ body {
     color: #fff !important;
     position: relative;
     padding-top: 30px;
+    border-radius:  0 0 85% 85% / 30%;
   }
 .dark-mode, .dark-mode *{
   background-color: #33313B;
@@ -124,6 +125,7 @@ padding: 5px;
   left:0;
   right:0;
   margin: 0;
+  border-radius: 85% 85% 0 0 / 30%;
 }
 .course-icon{
   width: 100%;
