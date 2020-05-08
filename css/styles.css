@@ -169,7 +169,7 @@ padding: 5px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.menu .item: :last-of-type{
+.menu .item :last-of-type{
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
