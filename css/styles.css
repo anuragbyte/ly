@@ -97,6 +97,10 @@ body {
   color: #07689F;
   margin: 0px;
 }
+.item{
+  border-color: #07689F !important;
+  border-width: 2px;
+}
  .navbar{
     background-color: #3F72AF;
     color: #fff !important;
@@ -153,9 +157,23 @@ padding: 5px;
   border-color: #07689F;
   opacity: .25;
 }
-.dropdown-submenu{
-  position: relative;
+.dropdown .menu{
+  border: solid 1px #07689F !important;
+  border-radius: 5px !important;
+} 
+.menu .item{
+  border: solid 1px #07689F;
+  border-top-style: none !important;
 }
+.menu .item:nth-child(1){
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.menu .item: :last-of-type{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 .social{
   padding: 20px;
 }
