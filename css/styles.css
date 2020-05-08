@@ -115,7 +115,6 @@ body {
 }
 
 .middle-container{
-background-color: #f9F7F7;
 color: #07689F;
 margin-bottom: 2px;
 padding: 5px;
@@ -177,4 +176,9 @@ padding: 5px;
 .social{
   padding: 20px;
 }
-
+.contact{
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
