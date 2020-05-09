@@ -124,7 +124,7 @@ padding: 5px;
   background-color: #DBE2EF;
   color: #fff;
   width: 100%;
-  height: 130px;
+  height: fit-content;
   left:0;
   right:0;
   margin: 0;
@@ -133,9 +133,16 @@ padding: 5px;
 .course-icon{
   width: 100%;
 }
+.footer-text{
+  color: #888888 !important;
+  margin: 1%;
+}
 @media screen and (max-width: 576px) {
   .course-icon {
     width: 60%;
+  }
+  .footer-text{
+    font-size: 10px;
   }
   .row{
     text-align: center;
@@ -174,7 +181,8 @@ padding: 5px;
 }
 
 .social{
-  padding: 20px;
+  margin-top: 5%;
+  margin-bottom: 0%;
 }
 .contact{
   display: flex !important;
