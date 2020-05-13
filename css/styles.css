@@ -190,3 +190,9 @@ padding: 5px;
   justify-content: center !important;
   align-items: center !important;
 }
+.courses-page{
+  margin: 3%;
+}
+.courses-page h2{
+  margin: 2%;
+}
