@@ -260,3 +260,11 @@ ul{
   margin: 0;
   padding: 0;
 }
+#payLinkWeb, #payLinkDM{
+  display: inline-flex;
+}
+s{
+  font-size: 40px;
+  margin-left: 5px;
+  cursor: pointer;
+}

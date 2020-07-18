@@ -23,6 +23,8 @@ function ValidateCodeWeb() {
             const enrolBtn = document.querySelector("#payLinkWeb");
             enrolBtn.setAttribute("href", "https://rzp.io/l/hoAI0KL");
             document.querySelector("#alert").innerHTML = `<div class="alert alert-success" role="alert">Coupon code valid! Click on Enroll Now button.</div>`
+            const button = document.querySelector("#enrolBtn");
+            button.innerText = "Enroll Now @949"
         } else {
             const enrolBtn = document.querySelector("#payLinkWeb");
             enrolBtn.setAttribute("href", "https://rzp.io/l/cTj2on0");
@@ -45,6 +47,8 @@ function ValidateCodeDM() {
             const enrolBtn = document.querySelector("#payLinkDM");
             enrolBtn.setAttribute("href", "https://rzp.io/l/hoAI0KL");
             document.querySelector("#alert").innerHTML = `<div class="alert alert-success" role="alert">Coupon code valid! Click on Enroll Now button.</div>`
+            const button = document.querySelector("#enrolBtn");
+            button.innerText = "Enroll Now @1200"
         } else {
             const enrolBtn = document.querySelector("#payLinkDM");
             enrolBtn.setAttribute("href", "https://rzp.io/l/cTj2on0");
