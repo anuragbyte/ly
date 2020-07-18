@@ -13,24 +13,46 @@ window.onload = function () {
     }, !1)
 }
 
-function ValidateCode() {
+function ValidateCodeWeb() {
     const code = document.querySelector("#couponCode").value;
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0');
-    console.log(dd, mm)
-    console.log(code)
-    if (dd < 18 && mm === "07") {
+    if (dd < 22 && mm === "07") {
         if (code === "LY100OFF") {
             const enrolBtn = document.querySelector("#payLinkWeb");
             enrolBtn.setAttribute("href", "https://rzp.io/l/hoAI0KL");
+            document.querySelector("#alert").innerHTML = `<div class="alert alert-success" role="alert">Coupon code valid! Click on Enroll Now button.</div>`
         } else {
             const enrolBtn = document.querySelector("#payLinkWeb");
             enrolBtn.setAttribute("href", "https://rzp.io/l/cTj2on0");
+            document.querySelector("#alert").innerHTML = `<div class="alert alert-danger" role="alert">Coupon code invalid! Click on Enroll Now button. </div>`
         }
     } else {
         alert("The coupon code period has expired.")
         const enrolBtn = document.querySelector("#payLinkWeb");
+        enrolBtn.setAttribute("href", "https://rzp.io/l/cTj2on0");
+    }
+}
+
+function ValidateCodeDM() {
+    const code = document.querySelector("#couponCode").value;
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    if (dd < 23 && mm === "07") {
+        if (code === "LY20%OFF") {
+            const enrolBtn = document.querySelector("#payLinkDM");
+            enrolBtn.setAttribute("href", "https://rzp.io/l/hoAI0KL");
+            document.querySelector("#alert").innerHTML = `<div class="alert alert-success" role="alert">Coupon code valid! Click on Enroll Now button.</div>`
+        } else {
+            const enrolBtn = document.querySelector("#payLinkDM");
+            enrolBtn.setAttribute("href", "https://rzp.io/l/cTj2on0");
+            document.querySelector("#alert").innerHTML = `<div class="alert alert-danger" role="alert">Coupon code invalid! Click on Enroll Now button. </div>`
+        }
+    } else {
+        alert("The coupon code period has expired.")
+        const enrolBtn = document.querySelector("#payLinkDM");
         enrolBtn.setAttribute("href", "https://rzp.io/l/cTj2on0");
     }
 }
