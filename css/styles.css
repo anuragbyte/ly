@@ -86,6 +86,7 @@ body {
   color: #33313B !important;
 }
 .jumbotron{
+  margin-top: 10vh;
   color: #07689F;
   background-color: #fff !important;
   height: 7% !important;
@@ -267,4 +268,31 @@ s{
   font-size: 40px;
   margin-left: 5px;
   cursor: pointer;
+}
+.aws-educate{
+  margin: 10vh 0vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  min-height: 200px;
+}
+.aws-educate h1{
+  font-weight: 700;
+  margin-top: 15px !important;
+  font-size: 50px;
+  padding-right: 20px;
+}
+@media screen and (max-width: 600px){
+  .aws-educate{
+    flex-direction: column;
+  }
+  .aws-educate h1{
+    width: fit-content;
+    font-size: 30px;
+  }
+  .aws-educate img{
+    width: 100%;
+  }
 }
